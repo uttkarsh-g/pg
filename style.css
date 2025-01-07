@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Tsukimi+Rounded&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Tsukimi Rounded', serif;
 }
 html,
 body {
@@ -10,15 +12,55 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.see {
+  display: flex !important;
 }
 .main {
-  width: 20rem;
+  width: 25rem;
   height: 8rem;
-  background-color: red;
-  padding: 20px 10px;
+  border: 1px solid black;
+  padding: 1px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.main > h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.abs {
+  position: absolute;
+  top: 38%;
+  width: fit-content;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+#right {
+  margin-left: 5px;
+  color: green;
+}
+#password {
+  width: 100%;
+  margin: 10px 0;
+}
+#copyIcon {
+  padding: 20px;
 }
 #pass {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 452px) {
+  body {
+    padding: 0 20px;
+  }
+  .main {
+    height: fit-content;
+    padding: 20px 10px;
+  }
 }
